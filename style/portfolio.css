@@ -1,0 +1,158 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'XiaolaiSC', sans-serif;
+}
+
+.container {
+    position: relative;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    overflow-y: scroll; 
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+    background-attachment: fixed;
+}
+
+.portfolio-showcase {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    flex: 1;
+}
+
+.avatar {
+    position: relative; 
+    z-index: 1; 
+    width: 10vw; 
+    height: 10vw;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid white;
+}
+
+.quote {
+    font-size: 34px;
+    margin-bottom: 40px;
+    max-width: 80%;
+}
+
+nav {
+    position: fixed;
+    left: 20px;
+    top: 0;
+    z-index: 2333;
+    transform: rotate(90deg) translate3d(0,0,0);
+    transform-origin: 0% 100%;
+    opacity: .7;
+    transition: .3s all ease-out;
+    font-family: 'Roboto', 'Tahoma', "Consolas", "Microsoft YaHei";
+}
+
+nav a {
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    opacity: .4;
+    transition: .3s all;
+}
+
+nav a.time {
+    opacity: 1;
+}
+
+nav a.clip {
+    height: 3px;
+    width: 3px;
+    background: #fff;
+    border-radius: 100%;
+}
+
+nav a:hover,
+nav a.active {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+@media screen and (min-width: 1800px) {
+    .container {
+        width: 70%;
+    }
+    nav a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+        padding: 15px 5%;
+        overflow: auto;
+        font-size: 13px;
+        left: 0;
+        top: inherit;
+        bottom: 0;
+        transform: rotate(0deg) translate3d(0,0,0);
+        transform-origin: 0% 100%;
+        white-space: nowrap;
+        width: 90%;
+        background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.8));
+    }
+}
+
+.project {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    flex: 1 1 300px;
+}
+
+.project h3 {
+    margin: 0 0 10px;
+}
+
+.project-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <title>MistaJC</title>
+    <meta name="description" content="MistaJC">
+    <meta name="keywords" content="contact">
+    <link rel="shortcut icon" href="./images/profile.jpg">
+    <link rel="apple-touch-icon" href="./images/profile.jpg">
+    <link rel="stylesheet" href="./style/contact.css">
+</head>
+
+<body>
+    <nav>
+        <a href="homepage.html" target="_blank" rel="noopener">Homepage</a>
+        <a class="clip"></a>
+        <a href="about.html" target="_blank" rel="noopener">About Me</a>
+        <a class="clip"></a>
+        <a href="portfolio.html" target="_blank" rel="noopener">Portfolio</a>
+        <a class="clip"></a>
+        <a href="contact.html" class="time" rel="noopener">Contact</a>
+        <a class="clip"></a>
+        <a href="resume.html" target="_blank" rel="noopener">Resume</a>
+    </nav>
+    
+    <div class="container">
+        <img class="background" id="bgImage" alt="Atmospheric background image with cliffs and mist">
+        <img class="avatar" src="./images/profile.jpg" alt="Random avatar">
+        <div class="quote" id="randomQuote"></div>
+        <div class="links" id="linkContainer"></div>
+    </div>
+    <form class="contact-form" action="您的服务器端脚本URL" method="post">
+        <div class="form-group">
+            <label for="name">Your name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required placeholder="Write here your message... I will reply to you soon."></textarea>
+        </div>
+        <button type="submit">SEND</button>
+    </form>
+    <script src="./script/contact.js"></script>
+</body>
+
+</html>
